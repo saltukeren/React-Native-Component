@@ -11,7 +11,7 @@ import Text from "../../Text";
 interface TextAndImageButtonProps {
   onPress(): void;
   imageStyle?: StyleProp<ImageStyle>;
-  buttonText: string;
+  buttonText?: string;
   image: HTMLImageElement;
 }
 
@@ -25,6 +25,7 @@ export default function TextAndImageButton({
     buttonStyle: {
       flexDirection: "row",
       alignItems: "center",
+      marginRight: 20
     },
 
     imageStyle: {
